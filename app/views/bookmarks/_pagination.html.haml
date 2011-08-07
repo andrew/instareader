@@ -9,5 +9,5 @@
     .next= link_to 'Next', bookmark_path(@index+1)
     
   .functions
-    .original= link_to 'Original', @bookmark.text, :title => @bookmark.text
+    .original= link_to 'Original', @bookmark.link, :title => @bookmark.link
     .delete= link_to 'Delete', bookmark_path(@index), :method => :delete
