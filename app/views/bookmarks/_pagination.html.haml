@@ -1,0 +1,13 @@
+.pagination
+  - unless @index.zero?
+    .previous= link_to 'Previous', bookmark_path(@index-1)
+  .total
+    = @index
+    \/
+    = @bookmarks.length
+  - unless @index == (@bookmarks.length)
+    .next= link_to 'Next', bookmark_path(@index+1)
+    
+  .functions
+    .original= link_to 'Original', @bookmark.text, :title => @bookmark.text
+    .delete= link_to 'Delete', bookmark_path(@index), :method => :delete

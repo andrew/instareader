@@ -1,0 +1,5 @@
+%ul
+  - @bookmarks.each_with_index do |bookmark, i|
+    %li
+      %h3= link_to bookmark.title, bookmark_path(i+1)
+      %p= link_to bookmark.link
