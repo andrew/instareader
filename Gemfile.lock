@@ -1,5 +1,6 @@
-PATH
-  remote: ../instascraper
+GIT
+  remote: git://github.com/andrew/instascraper.git
+  revision: b19cd1ac7ee907f6bb79979e1368987fe43f3c29
   specs:
     instascraper (0.0.2)
       mechanize
