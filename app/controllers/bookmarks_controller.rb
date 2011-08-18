@@ -3,7 +3,7 @@ class BookmarksController < ApplicationController
 
   def show
     @index = params[:id].to_i
-    if @index.length >= @bookmarks.length
+    if @index >= @bookmarks.length
       redirect_to bookmarks_path
     else 
       @bookmark = @bookmarks[@index-1]
