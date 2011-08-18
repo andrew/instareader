@@ -3,7 +3,11 @@ class BookmarksController < ApplicationController
 
   def show
     @index = params[:id].to_i
-    @bookmark = @bookmarks[@index-1]
+    if @index.length >= @bookmarks.length
+      redirect_to bookmarks_path
+    else 
+      @bookmark = @bookmarks[@index-1]
+    end
   end
 
   def destroy
