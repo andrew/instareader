@@ -10,7 +10,11 @@ class BookmarksController < ApplicationController
     @index = params[:id].to_i
     @bookmark = @bookmarks[@index-1]
     @bookmark.delete
-    redirect_to bookmark_path(@index)
+    if @bookmarks.length == 1
+      redirect_to bookmarks_path
+    else
+      redirect_to bookmark_path((@index == 1 ? 1 : @index-1))
+    end
   end
 
   protected
