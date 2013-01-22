@@ -29,4 +29,4 @@ Report Issues/Feature requests on [GitHub Issues](http://github.com/andrew/insta
 
 ## Copyright
 
-Copyright (c) 2011 Andrew Nesbitt. See [LICENSE](https://github.com/andrew/instareader/blob/master/LICENSE) for details.
+Copyright (c) 2013 Andrew Nesbitt. See [LICENSE](https://github.com/andrew/instareader/blob/master/LICENSE) for details.
